@@ -37,7 +37,7 @@ const server = app.listen(4000, () => console.log(`server is runnin on port ${PO
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: 'https://think-craft.vercel.app/'
+        origin: 'https://think-craft.vercel.app'
     }
 });
 const emailToSocketIdMap = new Map();
