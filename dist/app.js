@@ -24,7 +24,7 @@ app.use((0, express_fileupload_1.default)({
 }));
 dotenv_1.default.config({ path: path_1.default.resolve(__dirname, '../.env') });
 //mogodb connection
-(0, dbConfig_1.default)(process.env.MONGODB_CONNECTION_URL || "");
+(0, dbConfig_1.default)("mongodb+srv://egoft:egoft7560@cluster0.o6w4ie8.mongodb.net/thinkcraft" || "");
 //setup routes
 app.use('/admin', admin_1.default);
 app.use('/advisor', advisor_1.default);
